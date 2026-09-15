@@ -1,88 +1,173 @@
-ice-note">
-                            Небольшой сайт
-                        </div>
-                    </div>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                </div>
+<title>Сайт Тани</title>
 
+<style>
+* {
+    box-sizing: border-box;
+}
 
-                <div class="price-card">
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
 
-                    <div class="price-icon">
-                        ✨
-                    </div>
+    background: linear-gradient(
+        135deg,
+        #c9a98a,
+        #ead8c5,
+        #b99170
+    );
 
-                    <div>
-                        <h3>Лендинг</h3>
+    font-family: Arial, sans-serif;
+    color: #4b382c;
+}
 
-                        <div class="price">
-                            от 1 000 ₽
-                        </div>
+.card {
+    width: 100%;
+    max-width: 620px;
 
-                        <div class="price-note">
-                            Страница для проекта
-                        </div>
-                    </div>
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 28px;
 
-                </div>
+    padding: 45px;
+    box-shadow: 0 20px 50px rgba(70, 45, 30, 0.18);
+}
 
+.coffee {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
 
-                <div class="price-card">
+h1 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin: 0 0 12px;
+    color: #3f2c21;
+}
 
-                    <div class="price-icon">
-                        ☕
-                    </div>
+.subtitle {
+    text-align: center;
+    font-size: 17px;
+    color: #806957;
+    margin-bottom: 35px;
+}
 
-                    <div>
-                        <h3>Корпоративный сайт</h3>
+h2 {
+    font-family: Georgia, serif;
+    color: #543b2b;
+    margin-top: 30px;
+}
 
-                        <div class="price">
-                            от 2 000 ₽
-                        </div>
+p {
+    line-height: 1.6;
+}
 
-                        <div class="price-note">
-                            Для бизнеса
-                        </div>
-                    </div>
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-                </div>
+    padding: 14px 18px;
+    margin: 10px 0;
 
-            </div>
+    background: #f5eee8;
+    border-radius: 14px;
+}
 
-        </section>
+.price span:last-child {
+    font-weight: bold;
+    color: #76523b;
+}
 
+.telegram {
+    display: block;
+    text-align: center;
 
-        <!-- Контакты -->
+    margin-top: 30px;
+    padding: 15px;
 
-        <section class="section contact" id="contact">
+    background: #76523b;
+    color: white;
+    text-decoration: none;
 
-            <h2 class="section-title">
-                💌 Связаться со мной
-            </h2>
+    border-radius: 15px;
+    font-weight: bold;
+}
 
-            <p class="section-text">
-                Напишите мне, чтобы обсудить ваш сайт!
-            </p>
+.telegram:hover {
+    background: #5d402f;
+}
 
-            <a
-                href="https://t.me/vebtanya"
-                class="telegram"
-                target="_blank"
-            >
-                💬 Telegram · @vebtanya
-            </a>
+@media (max-width: 600px) {
+    .card {
+        padding: 30px 22px;
+    }
 
-        </section>
+    h1 {
+        font-size: 34px;
+    }
+}
+</style>
+</head>
 
-    </main>
+<body>
 
+<div class="card">
 
-    <!-- Подвал -->
+    <div class="coffee">☕</div>
 
-    <footer>
-        Сделано с ☕ и любовью к веб-дизайну
-    </footer>
+    <h1>Мой первый сайт</h1>
 
+    <p class="subtitle">
+        Привет! Я создаю красивые и удобные сайты.
+    </p>
+
+    <h2>Обо мне</h2>
+
+    <p>
+        Меня зовут Таня. Я начинающий веб-разработчик
+        и учусь создавать сайты.
+    </p>
+
+    <h2>Прайс</h2>
+
+    <div class="price">
+        <span>Сайт-визитка</span>
+        <span>от 500 ₽</span>
+    </div>
+
+    <div class="price">
+        <span>Лендинг</span>
+        <span>от 1000 ₽</span>
+    </div>
+
+    <div class="price">
+        <span>Корпоративный сайт</span>
+        <span>от 2000 ₽</span>
+    </div>
+
+    <h2>Связаться со мной</h2>
+
+    <p>
+        Напишите мне, чтобы обсудить ваш сайт!
+    </p>
+
+    <a class="telegram" href="https://t.me/vebtanya">
+        Написать в Telegram
+    </a>
+
+</div>
 
 </body>
 </html>
